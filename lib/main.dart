@@ -6,9 +6,18 @@ void main(List<String> args) {
 
 //raccourci pour la méthode main: void main() => runApp(MyApp());
 
+//Pour reformater le code: Maj + Alt + F
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Text('Hello'),);
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('My First Cool App'),
+        ),
+        body: Text('This is my default text!'),
+      ),
+    );
   }
 }
